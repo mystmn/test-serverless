@@ -1,0 +1,12 @@
+  .bar {
+    fill: blue;
+    opacity: 0.6;
+  }
+.bar:hover {
+    fill: #ec008c;
+    opacity: 1;
+}
+.css-bar:hover {
+    fill: #ec008c;
+    opacity: 1;
+}

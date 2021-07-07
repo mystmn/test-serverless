@@ -1,0 +1,715 @@
+{% extends "default.html" %}
+{% block body %}
+{% include '/links/awesome_font.html' %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}" xmlns="http://www.w3.org/1999/html">
+
+<!-- image hover-->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/img-hover-effect.css')}}">
+
+<!-- tiny slider css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/normalize.css')}}"/>
+
+<!-- Awesome Font -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/javascript-detect-element-resize/0.5.3/detect-element-resize.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+{% include 'tiny-slider.html' %}
+
+<!--
+<div class="row header-slider">
+    <div class="slider" id="responsive">
+        <div class="slider-item"><img src="{{ url_for('static', filename='img/columbus-skyline.png')}}"></div>
+    </div>
+    <div class="col-sm-12 text-center slider-caption">
+        <h1 class="banner">GREENWALD SALES & MARKETING</h1>
+        <div class="col-sm-12 text-center mx-auto" style="width: 40%;">
+            <h3>Representing the food service industry’s premier tabletop, smallwares and light
+                equipment manufacturers
+                across Ohio, Indiana, Michigan, Kentucky, West Virginia, and Western Pennsylvania</h3>
+        </div>
+    </div>
+</div>
+-->
+<!-- ABOUT Content -->
+<div class="container-fluid" style="margin-top:-100px;">
+    <section id="about" style="position: relative;">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>ABOUT US</h1>
+                <div class="rk-separator"></div>
+            </div>
+            <div class="col-sm-12 text-center">
+                <p><strong>Greenwald Sales & Marketing is a manufacturers’ representative agency for the
+                    foodservice industry’s premier manufacturers in the categories of tabletop,
+                    smallwares, and light equipment. Branch office sales and marketing coverage includes Ohio, Indiana,
+                    Michigan, Kentucky, West Virginia, and Western Pennsylvania. Melissa Greenwald
+                    founded Greenwald Sales & Marketing in 2017 to provide the
+                    best representation in the marketplace.</strong></p>
+            </div>
+        </div>
+    </section>
+    <section id="manufacturers">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h1>MANUFACTURERS</h1>
+                <div class="rk-separator"></div>
+            </div>
+        </div>
+        <!-- row 1 -->
+        <div class="row bg-white">
+            <div class="col-lg-4 manufacturers text-center">
+                <a href="https://www.waringcommercialproducts.com/" target="_blank"><img class="image"
+                                                                                         src="{{ url_for('static', filename='img/sec-manufac/waring-300x300.jpg')}}">
+                </a>
+            </div>
+            <div class="col-lg-4 manufacturers text-center">
+                <a href="http://www.tablecraft.com/" target="_blank"><img class="manufacturers-image"
+                                                                          src="{{ url_for('static', filename='img/sec-manufac/tablecraft-300x300.png')}}">
+                </a>
+            </div>
+            <div class="col-lg-3 offset-lg-1 manufacturers">
+                <a href="https://bauscherhepp.com/" target="_blank">
+                    {% include 'manufacturers.html' %}
+                </a>
+            </div>
+        </div>
+        <!-- row 2 -->
+        <div class="row bg-white">
+            <div class="col-lg-4 manufacturers text-center">
+                <a href="http://www.hollowick.com/" target="_blank"><img class="manufacturers-image"
+                                                                         src="{{ url_for('static', filename='img/sec-manufac/hollowick_inc-300x300.png')}}">
+                </a>
+            </div>
+            <div class="col-lg-4 manufacturers text-center">
+                <a href="http://www.vertexchina.com/" target="_blank"><img class="manufacturers-image"
+                                                                           src="{{ url_for('static', filename='img/sec-manufac/vertext-300x300.png')}}">
+                </a>
+            </div>
+            <div class="col-lg-4 manufacturers text-center">
+                <a href="http://www.mundial-usa.com/" target="_blank"><img class="manufacturers-image"
+                                                                           src="{{ url_for('static', filename='img/sec-manufac/mundial-300x300-rev1.png')}}">
+                </a>
+            </div>
+        </div>
+        <!-- row 3 -->
+        <div class="row bg-white">
+            <div class="col-lg-4 manufacturers text-center">
+                <a href="https://www.easterntabletop.com/" target="_blank">
+                    <img class="manufacturers-image"
+                         src="{{ url_for('static', filename='img/sec-manufac/eastern-300x300.png')}}">
+                </a>
+            </div>
+            <div class="col-lg-4 manufacturers text-center">
+                <a href="https://chef-master.com/" target="_blank"><img class="manufacturers-image"
+                                                                        src="{{ url_for('static', filename='img/sec-manufac/chefmaster-300x300.png')}}">
+                </a>
+            </div>
+            <div class="col-lg-4 manufacturers text-center">
+                <a href="https://www.chilewich.com/store/" target="_blank"> <img class="manufacturers-image"
+                                                                                 src="{{ url_for('static', filename='img/sec-manufac/chilewich-300x300.jpg')}}">
+                </a>
+            </div>
+        </div>
+        <!-- row 4 -->
+        <div class="row bg-white">
+            <div class="col-lg-4 manufacturers text-center">
+                <a href="https://www.revol-pro.com/" target="_blank">
+                    <img class="manufacturers-image"
+                         src="{{ url_for('static', filename='img/sec-manufac/revol-300x300.png')}}">
+                </a>
+            </div>
+            <div class="col-lg-4 manufacturers text-center">
+                <a href="https://www.chefwear.com/" target="_blank"> <img class="manufacturers-image"
+                                                                          src="{{ url_for('static', filename='img/sec-manufac/chefwear-300x300.jpg')}}">
+                </a>
+            </div>
+            <div class="col-lg-4 manufacturers text-center">
+                <a href="https://www.busybeancoffee.com/" target="_blank"><img class="manufacturers-image"
+                                                                               src="{{ url_for('static', filename='img/sec-manufac/busygreen-300x300.png')}}">
+                </a>
+            </div>
+        </div>
+        <!-- row 5 -->
+        <div class="row bg-white">
+            <div class="col-lg-4 manufacturers text-center">
+                <a href="https://onthetablellc.com/" target="_blank"> <img class="manufacturers-image"
+                                                                           src="{{ url_for('static', filename='img/sec-manufac/onthetable-300x300.png')}}">
+                </a>
+            </div>
+            <div class="col-lg-4 manufacturers text-center">
+                <a href="https://www.verowater.com/" target="_blank"> <img class="manufacturers-image"
+                                                                           src="{{ url_for('static', filename='img/sec-manufac/vero-300x300.png')}}">
+                </a>
+            </div>
+            <div class="col-lg-4 manufacturers text-center">
+                <a href="http://www.agnelliusa.com/" target="_blank">
+                    <img class="manufacturers-image"
+                         src="{{ url_for('static', filename='img/sec-manufac/agnelli-300x300.png')}}">
+                </a>
+            </div>
+        </div>
+        <!-- row 6 -->
+        <div class="row bg-white">
+            <div class="col-lg-4 manufacturers text-center">
+                <a href="https://www.emilehenryusa.com/" target="_blank"> <img class="manufacturers-image"
+                                                                               src="{{ url_for('static', filename='img/sec-manufac/emile_henry-300x300.png')}}">
+                </a>
+            </div>
+            <div class="col-lg-4 manufacturers text-center">
+                <a href="https://www.duralexusa.com/" target="_blank"> <img class="manufacturers-image"
+                                                                            src="{{ url_for('static', filename='img/sec-manufac/Duralex-300x300.png')}}">
+                </a>
+            </div>
+            <div class="col-lg-4 manufacturers text-center">
+                <a href="https://www.lekueusa.com/" target="_blank"> <img class="manufacturers-image"
+                                                                          src="{{ url_for('static', filename='img/sec-manufac/Lekue-300x300.png')}}">
+                </a>
+            </div>
+        </div>
+        <!-- Row 7 -->
+        <div class="row bg-white">
+            <div class="col-lg-4 manufacturers text-center">
+                <a href="https://www.jarsusa.com/" target="_blank"> <img class="manufacturers-image"
+                                                                         src="{{ url_for('static', filename='img/sec-manufac/JARSFRANCE-300x300.png')}}">
+                </a>
+            </div>
+        </div>
+        <!-- last row -->
+
+    </section>
+    <section id="what-we-do">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>WHAT WE DO</h1>
+                <div class="rk-separator"></div>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fa fa-cutlery" aria-hidden="true"></i>
+                <p>TABLETOP</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                <p>SMALLWARES</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fa fa-plug" aria-hidden="true"></i>
+                <p>LIGHT EQUIPMENT</p>
+            </div>
+        </div>
+    </section>
+    <div class="mission-statement">
+        <div class="col-md-12 text-center"><h4>Mission Statement</h4>
+            <p>Greenwald Sales & Marketing, LLC is committed to providing excellence in sales and marketing
+                representation for the foodservice industry’s leading manufacturers of smallwares, tabletop, and
+                light equipment products. We do so by executing the best strategy for our manufacturer partners, our
+                clients, and our team members in order to promote success in our combined businesses.</p>
+        </div>
+    </div>
+    <div class="empty_space"></div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>CORE VALUES</h1>
+            <div class="rk-separator"></div>
+        </div>
+        <div class="col-md-12 w-200 text-center bg-white">
+            <img src="{{ url_for('static', filename='img/Core-Values-900x388.png')}}" class="img-fluid"
+                 alt="Responsive image">
+        </div>
+    </div>
+    <div class="empty_space"></div>
+    <section id="team">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>CONTACT A SALES REP</h1>
+                <div class="rk-separator"></div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Member 1 -->
+            <div class="col-md-4">
+                <div class="py-1">
+                    <div class="hover hover-1 text-white rounded text-center">
+                        <img src="{{ url_for('static', filename='img/team/Melissa-Skinner_v2.png')}}" alt="">
+                        <div class="hover-overlay"></div>
+                        <div class="hover-1-content">
+                            <div class="social-networking">
+                                <p class="hover-1-description font-weight-light mb-0">
+                                    <a href="https://twitter.com/mmgreenwald"><i
+                                            class="fa fa-twitter fa-lg"></i></a><a
+                                        href="https://www.linkedin.com/in/melissa-greenwald-98a0578"><i
+                                        class="fa fa-linkedin fa-lg"></i></a><a
+                                        href="mailto: Melissa@greenwaldsales.com"><i
+                                        class="fa fa-envelope fa-lg"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="regional-area text-center mb-4">
+                        <h3>MELISSA GREENWALD, </br>PRESIDENT</h3>
+                        <h5>CENTRAL OHIO </h5>
+                    </div>
+                </div>
+                <p>Melissa Greenwald is a Manufacturers’ Representative for the
+                    foodservice
+                    industry’s leading smallwares, tabletop, and light equipment products. Melissa began her career
+                    in
+                    foodservice equipment and supply sales in 2005. Since then, she has represented more than 50
+                    leading
+                    brands, bringing great expertise in the smallwares and tabletop category. In addition, she is
+                    the
+                    recipient of 4 Performance in Tabletop Awards from Foodservice Equipment &amp; Supplies
+                    Magazine. She is
+                    a second-generation rep, her father having blazed the same trail for over 30 years before
+                    her.</p>
+                <p>Melissa currently serves on the board of directors for the
+                    Manufacturers’
+                    Agents Association for the Foodservice Industry (MAFSI) and had also served on its board from
+                    2011-2016.&nbsp;
+                    In that role, she is the Marketing and Communications Committee Chair and is responsible for the
+                    organization’s communications, including the publication of MAFSI Matters.</p>
+                <p>Melissa currently serves on the board of directors for the
+                    Manufacturers’
+                    Agents Association for the Foodservice Industry (MAFSI) and had also served on its board from
+                    2011-2016.&nbsp;
+                    In that role, she is the Marketing and Communications Committee Chair and is responsible for the
+                    organization’s communications, including the publication of MAFSI Matters.</p>
+                <p>She is also a licensed attorney in the state of Ohio but is not
+                    currently
+                    practicing law.</p>
+                <p>Bachelor of Science – Political Science – Arizona State University,
+                    2001</p>
+                <p>Juris Doctor – Cleveland Marshall College of Law, 2005</p>
+            </div>
+            <!-- Member 2 -->
+            <div class="col-md-4">
+                <div class="py-1">
+                    <div class="hover hover-1 text-white rounded text-center">
+                        <img src="{{ url_for('static', filename='img/team/Chuck2019v2.png')}}" alt="">
+                        <div class="hover-overlay"></div>
+                        <div class="hover-1-content">
+                            <div class="social-networking">
+                                <p class="hover-1-description font-weight-light mb-0">
+                                    <a href="https://twitter.com/kileychuck1" target="_blank">
+                                        <i class="fa fa-twitter fa-lg"></i></a><a
+                                        href="https://www.linkedin.com/in/chuck-kiley-b902b948" target="_blank"><i
+                                        class="fa fa-linkedin fa-lg"></i></a>
+                                    <a href="mailto: chuck@greenwaldsales.com" target="_blank">
+                                        <i class="fa fa-envelope fa-lg"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="regional-area">
+                        <h3 class="mb-4 text-center">CHUCK KILEY, </br>VICE PRESIDENT OF SALES </h3>
+                        <h5 class="mb-4 text-center">NORTHERN OHIO, MICHIGAN, WESTERN PENNSYLVANIA AND WEST
+                            VIRGINIA</h5>
+                    </div>
+                    <p>Chuck Kiley is a Manufacturers’ Representative for the foodservice
+                        industry’s
+                        leading smallwares,
+                        tabletop, and light equipment products. Chuck began his career in foodservice equipment and
+                        supply sales
+                        in 2000. Over the years, he has broadened is expertise to include not only Smallwares and
+                        tabletop
+                        products, but also heavy cooking equipment. In addition, he is a Certified Foodservice
+                        Professional
+                        (CFSP).</p>
+                    <p>
+                        In 2019, Chuck was the recipient of a first place award for Performance in Tabletop from
+                        Foodservice
+                        Equipment and Supplies Magazine.</p>
+                    <p>
+                        Chuck resides in Cuyahoga Falls with his wife, Terrie and their seven wonderful children.
+                    </p>
+                    <p> Bachelor of Business Administration, Marketing – Loyola University of
+                        Chicago,
+                        1992</p>
+                </div>
+            </div>
+            <!-- Member 3 -->
+            <div class="col-md-4">
+                <div class="py-1">
+                    <div class="hover hover-1 text-white rounded text-center">
+                        <img src="{{ url_for('static', filename='img/team/MargieHead_v2.png')}}" alt="">
+                        <div class="hover-overlay"></div>
+                        <div class="hover-1-content">
+                            <div class="social-networking">
+                                <p class="hover-1-description font-weight-light mb-0">
+                                    <a href="https://www.linkedin.com/in/margie-gaunt-a01b8648/" target="_blank"><i
+                                            class="fa fa-linkedin fa-lg"></i></a>
+                                    <a href="mailto: margie@greenwaldsales.com" target="_blank">
+                                        <i class="fa fa-envelope fa-lg"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="regional-area">
+                        <h3 class="mb-4 text-center">MARGIE GAUNT, </br>REGIONAL SALES MANAGER </h3>
+                        <h5 class="mb-4 text-center">SOUTHWEST OHIO, INDIANA, KENTUCKY</h5>
+                    </div>
+                </div>
+                <p>Margie Gaunt is a Manufacturers’ Representative for the foodservice
+                    industry’s
+                    leading smallwares,
+                    tabletop, and light equipment products.</p>
+
+                <p>Margie has had a successful career in the food service industry and
+                    brings over
+                    28 years in experience.
+                    In addition, she is also ServSafe certified by The National Restaurant Association Educational
+                    Foundation.</p>
+
+                <p>Margie lives in Mason, OH, with her husband John and their two pittie
+                    rescues,
+                    Lady & Oreo. They have
+                    been married for 8 years and have 6 wonderful children, scattered throughout the country, as
+                    well as 3
+                    beautiful grandchildren.</p>
+            </div>
+            <!-- Member 4 -->
+            <div class="col-md-4">
+                <div class="py-1">
+                    <div class="hover hover-1 text-white rounded text-center">
+                        <img src="{{ url_for('static', filename='img/team/MARIE GIBBS_v2.png')}}" alt="">
+                        <div class="hover-overlay"></div>
+                        <div class="hover-1-content">
+                            <div class="social-networking">
+                                <p class="hover-1-description font-weight-light mb-0">
+                                    <a href="mailto: marie@greenwaldsales.com" target="_blank">
+                                        <i class="fa fa-envelope fa-lg"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="regional-area text-center">
+                        <h3 class="mb-4">MARIE GIBBS, </br>SALES AND SHOWROOM COORDINATOR</h3>
+                        <h5 class="mb-4">SERVICING ALL TERRITORIES</h5>
+                    </div>
+                </div>
+                <p>Marie Gibbs has been providing superior inside sales support as
+                    manufacturer’s representative for the foodservice industry for 23 years. Since 1997, she has
+                    provided excellent customer service in the smallwares, tabletop and light equipment categories. She
+                    has extensive knowledge of the industry’s leading software and CRM platforms.</p>
+                <p>
+                    Marie lives in Columbus, Ohio. In her spare time, she loves spending time on her hobbies and attends
+                    club meetings where she held positions of Club President, Show Chairman and Treasurer.
+                </p>
+                <p>
+                    Marie is bilingual in English and Spanish.
+                </p>
+                <p>
+                    Bachelor of Science – Spanish Education 7-12, The Ohio State University
+                </p>
+                <p>
+                    Bachelor of Arts – Spanish – Wheeling College
+                </p>
+                <p>
+                    The University of Valencia, Valencia, Spain
+                </p>
+            </div>
+            <!-- Member 5 -->
+            <div class="col-md-4">
+                <div class="py-1">
+                    <div class="hover hover-1 text-white rounded text-center">
+                        <img src="{{ url_for('static', filename='img/team/Michelle2019_v2.png')}}" alt="">
+                        <div class="hover-overlay"></div>
+                        <div class="hover-1-content">
+                            <div class="social-networking">
+                                <p class="hover-1-description font-weight-light mb-0">
+                                    <a href="https://www.linkedin.com/in/michellefrench04/" target="_blank">
+                                        <i class="fa fa-linkedin fa-lg"></i></a><a
+                                        href="mailto: info@greenwaldsales.com" target="_blank"><i
+                                        class="fa fa-envelope fa-lg"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="regional-area">
+                        <h3 class="mb-4 text-center">MICHELLE FRENCH, </br>Creative Director</h3>
+                        <h5 class="mb-4 text-center">SERVICING ALL TERRITORIES</h5>
+                    </div>
+                </div>
+                <p>Michelle French has over 10 years of sales and marketing
+                    experience.</p>
+
+                <p>Michelle resides in Delaware with her husband Jared. She has two small
+                    children.</p>
+
+                <p>Bachelor of Art – Communication/ Graphic Design – Mount Vernon Nazarene
+                    University, 2008</p>
+            </div>
+            <!-- Member 6 -->
+            <div class="col-md-4">
+                <div class="py-1">
+                    <div class="hover hover-1 text-white rounded text-center">
+                        <img src="{{ url_for('static', filename='img/team/Nora2019_v2.png')}}" alt="">
+                        <div class="hover-overlay"></div>
+                        <div class="hover-1-content">
+                            <div class="social-networking">
+                                <p class="hover-1-description font-weight-light mb-0">
+                                    <a href="mailto: nora@greenwaldsales.com" target="_blank">
+                                        <i class="fa fa-envelope fa-lg"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="regional-area">
+                        <h3 class="mb-4 text-center">NORA WOLF, </br>ACCOUNTING CLERK</h3>
+                        <h5 class="mb-4 text-center">SERVICING ALL TERRITORIES</h5>
+                    </div>
+                </div>
+                <p>Nora Wolf is an accountant with over 10 years of experience in the Columbus
+                    area.</p>
+                <p>
+                    Nora resides in Lewis Center with her husband Nick and children, Neal and Hannah.
+                </p>
+
+                <p>Bachelor of Business Administration – Accounting – Ohio Northern
+                    University, 2009
+                </p>
+                <p>
+                    Masters of Business Administration – Finance – Capital University, 2016
+                </p></div>
+        </div>
+    </section>
+</div>
+<div class="empty_space"></div>
+
+<section class="map-background d-sm-none d-md-block" id="map-background"
+         style="background-image: url({{url_for('static', filename='img/restaurant-2535110_1920.jpg')}})  !important;">
+    <div class="container" style="padding: 5px;">
+        <div class="row">
+            <div class="col-lg-12 text-center cover">
+                <h1 class="text-center">area coverage</h1>
+            </div>
+        </div>
+        <div class="rk-separator"></div>
+        <div class="row">
+            <div class="col-sm-2 states m-auto" id="indiana">
+                <h3><b>Indiana</b></h3>
+                <img class="indiana" src="{{ url_for('static', filename='img/area-coverage/indiana-green.png')}}"
+                     alt="">
+            </div>
+            <div class="col-sm-2 states" id="ohio">
+                <h3><b>Ohio</b></h3>
+                <img class="ohio" src="{{ url_for('static', filename='img/area-coverage/ohio-green.png')}}" alt="">
+            </div>
+            <div class="col-sm-2 states" id="kentucky">
+                <h3><b>Kentucky</b></h3>
+                <img class="kentucky" src="{{ url_for('static', filename='img/area-coverage/kentucky-green.png')}}"
+                     alt="">
+            </div>
+            <div class="col-sm-2 states" id="west-virginia">
+                <h3><b>West Virginia</b></h3>
+                <img class="west-virginia"
+                     src="{{ url_for('static', filename='img/area-coverage/west-virginia-green.png')}}" alt="">
+            </div>
+            <div class="col-sm-2 states" id="michigan">
+                <h3><b>Michigan</b></h3>
+                <img class="michigan" src="{{ url_for('static', filename='img/area-coverage/michigan-green.png')}}"
+                     alt="">
+            </div>
+            <div class="col-sm-2 states" id="pennsylvania">
+                <h3><b>West Pennsylvania</b></h3>
+                <img class="pennsylvania"
+                     src="{{ url_for('static', filename='img/area-coverage/pennsylvania-green.png')}}" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 c-bg rounded state-cards" id="div-indiana">
+                <img class="rounded mx-auto d-block" src="{{ url_for('static', filename='img/team/MargieHead_v2.png')}}"
+                     alt="">
+                <h6 class="text-center">
+                    Margie Gaunt</br>
+                    Indiana </br><a href="mailto: margie@greenwaldsales.com"
+                                    target="_blank">Margie@greenwaldsales.com</a></br>
+                    <a href="tel:+15135756787" target="_blank">(513) 575-6787</a>
+                </h6>
+            </div>
+            <div class="col-sm-12 state-cards" id="div-ohio">
+                <div class="row">
+                    <div class="col-sm-3 c-bg rounded">
+                        <img class="rounded mx-auto d-block"
+                             src="{{ url_for('static', filename='img/team/Chuck2019v2.png')}}" alt="">
+                        <h6 class="text-center">CHUCK KILEY </br> North Ohio </br><a
+                                href="mailto: chuck@greenwaldsales.com"
+                                target="_blank">Chuck@greenwaldsales.com</a>
+                            </br><a href="tel:+13306961897" target="_blank">(330) 696-1897</a></h6>
+                    </div>
+                    <div class="col-sm-3 offset-sm-1 c-bg rounded">
+                        <img class="rounded mx-auto d-block"
+                             src="{{ url_for('static', filename='img/team/Melissa-Skinner_v2.png')}}" alt="">
+                        <h6 class="text-center">MELISSA GREENWALD </br>Central Ohio </br><a
+                                href="mailto: Melissa@greenwaldsales.com"
+                                target="_blank">Melissa@greenwaldsales.com</a>
+                            </br><a href="tel:+16144047733" target="_blank">(614) 404-7733</a></h6>
+                    </div>
+                    <div class="col-sm-3 offset-sm-1 c-bg rounded">
+                        <img class="rounded mx-auto d-block"
+                             src="{{ url_for('static', filename='img/team/MargieHead_v2.png')}}" alt="">
+                        <h6 class="text-center">Margie Gaunt </br> Southern Ohio</br><a
+                                href="mailto: margie@greenwaldsales.com"
+                                target="_blank">Margie@greenwaldsales.com</a>
+                            </br><a href="tel:+15135756787" target="_blank">(513) 575-6787</a></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-offset-2 col-sm-3 c-bg rounded state-cards" id="div-kentucky">
+                <img class="rounded mx-auto d-block" src="{{ url_for('static', filename='img/team/MargieHead_v2.png')}}"
+                     alt="">
+                <h6 class="text-center">Margie Gaunt </br> Kentucky</br><a href="mailto: margie@greenwaldsales.com"
+                                                                           target="_blank">Margie@greenwaldsales.com</a>
+                    </br><a href="tel:+15135756787" target="_blank">(513) 575-6787</a></h6>
+            </div>
+            <div class="col-offset-3 col-sm-3 c-bg rounded state-cards" id="div-west-virginia">
+                <img class="rounded mx-auto d-block" src="{{ url_for('static', filename='img/team/Chuck2019v2.png')}}"
+                     alt="">
+                <h6 class="text-center">CHUCK KILEY </br> West Virginia</br><a href="mailto: chuck@greenwaldsales.com"
+                                                                               target="_blank">Chuck@greenwaldsales.com</a>
+                    </br><a href="tel:+13306961897" target="_blank">(330) 696-1897</a></h6>
+            </div>
+            <div class="col-offset-3 col-sm-3 c-bg rounded state-cards" id="div-michigan">
+                <img class="rounded mx-auto d-block" src="{{ url_for('static', filename='img/team/Chuck2019v2.png')}}"
+                     alt="">
+                <h6 class="text-center">CHUCK KILEY </br> Michigan</br><a href="mailto: chuck@greenwaldsales.com"
+                                                                          target="_blank">Chuck@greenwaldsales.com</a>
+                    </br><a href="tel:+13306961897" target="_blank">(330) 696-1897</a></h6>
+            </div>
+            <div class="col-offset-3 col-sm-3 c-bg rounded state-cards" id="div-pennsylvania">
+                <img class="rounded mx-auto d-block" class="img-fluid"
+                     src="{{ url_for('static', filename='img/team/Chuck2019v2.png')}}" alt="">
+                <h6 class="text-center">CHUCK KILEY </br> Western Pennsylvania</br><a
+                        href="mailto: chuck@greenwaldsales.com" target="_blank">Chuck@greenwaldsales.com</a>
+                    </br><a href="tel:+13306961897" target="_blank">(330) 696-1897</a></h6>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container-fluid">
+    <div class="empty_space"></div>
+    <section id="showroom-locations">
+        <div class="col-lg-12 text-center">
+            <h1>showroom locations</h1>
+            <p>(BY APPOINTMENT ONLY)</p>
+        </div>
+        <div class="rk-separator"></div>
+        <div class="row">
+            <div class="col-lg-4 text-center">
+                <div class="col-sm-12"><h3>Columbus</h3></div>
+                <a href="https://www.google.com/maps/place/1220+Goodale+Blvd,+Columbus,+OH+43212/@39.9749492,-83.0385361,17z/data=!3m1!4b1!4m5!3m4!1s0x88388faa81736457:0xf0e1867162a7cd15!8m2!3d39.9749451!4d-83.0363474?shorturl=1"
+                   target="_blank">
+                    <div class="col-sm-12"><p>1220 Goodale Blvd.<br>Columbus, OH 43212</p></div>
+                </a>
+                <a href="{{ url_for('static', filename='pdf/show-rooms/Parking Map 1220 Goodale.pdf')}}"
+                   target="_blank"><i class="fa fa-car" aria-hidden="true"></i><br>Roadmap
+                </a>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="col-sm-12"><h3>Cincinnati</h3></div>
+                <a href="https://www.google.com/maps/place/4212+Airport+Rd+%23210,+Cincinnati,+OH+45226/@39.1061214,-84.4325436,17z/data=!3m1!4b1!4m5!3m4!1s0x8841adfd0aa96419:0x87526a2eb7c24ae4!8m2!3d39.1061173!4d-84.4303549?shorturl=1"
+                   target="_blank">
+                    <div class="col-sm-12"><p>4212 Airport Rd, Ste 210<br>Cincinnati, OH 45226</p></div>
+                </a>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="col-sm-12"><h3>Cleveland Area</h3></div>
+                <a href="https://www.google.com/maps/place/2104+Front+St+Ste+A,+Cuyahoga+Falls,+OH+44221/@41.1372223,-81.5302157,13.33z/data=!4m5!3m4!1s0x883127daa4797de7:0xe1b220352a42b636!8m2!3d41.1353605!4d-81.483401?shorturl=1"
+                   target="_blank">
+                    <div class="col-sm-12"><p>2104 Front St. Ste A<br>Cuyahoga Falls, OH 44221</p></div>
+                </a>
+                <a href="{{ url_for('static', filename='pdf/show-rooms/Parking Map- Cleveland.pdf')}}"
+                   target="_blank"><i class="fa fa-car" aria-hidden="true"></i><br>Roadmap
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="empty_space"></div>
+<section id="contact" class="bg-color">
+    <div class="no-gutter">
+        <div class="col-lg-3">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>MEMBER</h3>
+                </div>
+                <div class="col-lg-12 text-center mafsi">
+                    <img src="{{ url_for('static', filename='img/mafsi_logo-300x118.png')}}">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9">
+            <div class="row">
+                <div class="col-sm-4 text-center contact-address">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <h6><b>ADDRESS</b></h6>
+                    <small>Greenwald Sales &amp; Marketing<br>
+                        1220 Goodale Blvd<br>
+                        Columbus, OH 43212
+                    </small>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    <h6><b>CALL</b></h6>
+                    <small><a href="tel:+16144047733" target="_blank">(614) 404-7733</a></small>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <h6><b>EMAIL</b></h6>
+                    <small><a href="mailto:info@greenwaldsales.com" target="_blank">info@greenwaldsales.com</a></small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="bg-style">
+    <div class="row" style="padding: 30px 100px 50px 100px;">
+        <div class="col-lg-2 col-sm-6">
+            <img src="{{ url_for('static', filename='img/Logo-Vertical-Color-01.png')}}">
+        </div>
+        <div class="col-lg-6 offset-lg-4 col-sm-6" style="padding-top: 30px;">
+            <div class="row">
+                <div class="col-lg-3 col-sm-12 text-center">
+                    <h6><a href="https://www.facebook.com/greenwaldsalesmarketing/" target="_blank">facebook</a></h6>
+                </div>
+                <div class="col-lg-3 col-sm-12 text-center">
+                    <h6><a href="https://twitter.com/greenwald_sales" target="_blank">twitter</a></h6>
+                </div>
+                <div class="col-lg-3 col-sm-12 text-center">
+                    <h6><a href="https://www.instagram.com/greenwaldsales/" target="_blank">instagram</a></h6>
+                </div>
+                <div class="col-lg-3 col-sm-12 text-center">
+                    <h6><a href="https://www.linkedin.com/company/greenwald-sales-&-marketing/"
+                           target="_blank">linkedin</a></h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="split text-center">
+                <p>© 2020 Greenwald Sales & Marketing</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+<!--
+name :: Tiny Slider
+link ::
+-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script src="js/tiny-slider.js"></script>
+
+<!-- Sticky NAV
+<script src="js/sticky-nav.js"></script>
+-->
+
+<!-- Map cards -->
+<script type="text/javascript" src="{{ url_for('static', filename='regional-hover/js/regional-hover.js')}}"></script>
+<link type="text/css" href="{{ url_for('static', filename='regional-hover/css/regional-hover.css')}}" rel="stylesheet">
+{% endblock %}

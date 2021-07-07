@@ -1,0 +1,90 @@
+
+.state-cards{
+    display:none;
+}
+
+.card-test{
+    background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* *********** map section *********** */
+#map-background{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center 0px;
+    width: 100%;
+    height: 700px;
+    padding: 10px;
+}
+#map-background > overlay{
+    background-color: rgb(17, 17, 17);
+    opacity: 0.5;
+    width: 100%;
+    height: 90%;
+    margin-top-200px;
+    z-index: 4;
+}
+section.map-background .cover{
+    z-index: 4;
+}
+section.map-background .cover h3{
+    color: white;
+    text-transform: uppercase;
+    margin-top: -590px;
+}
+section.map-background img{
+    max-width: 700px;
+}
+.state-cards{
+    display:none;
+    height: auto;
+    width: auto;
+    margin: 25px auto 20px auto;
+    padding: 5px;
+}
+.state-cards a{
+    color: black;
+}
+.state-cards a:hover{
+    color: var(--yellow-green);
+}
+.state-cards img{
+    height: 210px;
+}
+
+.state-cards > h4{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-top: 5px;
+}
+.state-cards h4,.state-cards h6 {
+    color: #111;
+}
+
+/* Images */
+img.ohio{
+  -ms-transform: rotate(9deg); /* IE 9 */
+  transform: rotate(9deg);
+}
+img.indiana, img.kentucky,img.west-virginia,img.michigan, img.pennsylvania{
+    -ms-transform: rotate(0deg); /* IE 9 */
+    transform: rotate(0deg);
+}
+img.indiana, img.ohio, img.kentucky,img.west-virginia,img.michigan, img.pennsylvania{
+    opacity: 1;
+}
+
+/* States */
+.states{
+    text-align: center!important;
+    text-shadow: 1px 0 4px whitesmoke;
+}
+.states img:hover{
+    cursor: pointer;
+    opacity: .5;
+}

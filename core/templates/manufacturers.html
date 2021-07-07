@@ -1,0 +1,66 @@
+<script type="text/javascript" src="{{ url_for('static', filename='radiate-elements/lib/jquery.min.js')}}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='radiate-elements/lib/rad.js')}}"></script>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.radiate {
+	background: url('{{ url_for('static', filename='radiate-elements/img/Bauscherhepp-300x300.png')}}') no-repeat;
+	width: 400px;
+	height: 350px;
+	position: absolute;
+	z-index:5;
+	margin: auto;
+}
+
+</style>
+<div class="radiate" onmouseenter="$('.radiate').radiate('show')" onmouseleave="$('.radiate').radiate('hide')">
+    <ul>
+        <!-- Venta -->
+        <!-- starts here and goes in reverse -->
+        <li><img src="{{ url_for('static', filename='radiate-elements/img/bauscher-100x100.png')}}"></li>
+        <li><img src="{{ url_for('static', filename='radiate-elements/img/hepp1-100x100.png')}}"></li>
+        <li><img src="{{ url_for('static', filename='radiate-elements/img/playground-100x100-3.png')}}"></li>
+        <li><img src="{{ url_for('static', filename='radiate-elements/img/wmf-100x100.png')}}"></li>
+        <li><img src="{{ url_for('static', filename='radiate-elements/img/luigi-100x100.png')}}"></li>
+        <li><img src="{{ url_for('static', filename='radiate-elements/img/emsa-100x100-2.png')}}"></li>
+        <li><img src="{{ url_for('static', filename='radiate-elements/img/myglassstudio-100x100-2.png')}}"></li>
+        <li><img src="{{ url_for('static', filename='radiate-elements/img/vidivi-100x100.png')}}"></li>
+        <li><img src="{{ url_for('static', filename='radiate-elements/img/dalebrook-100x100.png')}}"></li>
+        <li><img src="{{ url_for('static', filename='radiate-elements/img/tassen-100x100-2.png')}}"></li>
+        <li><img src="{{ url_for('static', filename='radiate-elements/img/silit-100x100.png')}}"></li>
+        <li><img src="{{ url_for('static', filename='radiate-elements/img/kaiser-100x100.png')}}"></li>
+        <li><img src="{{ url_for('static', filename='radiate-elements/img/palm-100x100.png')}}"></li>
+        <li><img src="{{ url_for('static', filename='radiate-elements/img/Studio Raw-100x100.png')}}"></li>
+
+    </ul>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='radiate-elements/lib/rad.js')}}"></script></script>
+<script type="text/javascript">
+	$('.radiate').radiate({
+		angle:function(ul,i){
+			if(i<3)
+				return i*28
+			else
+				return i*26+2
+		},
+		offset:-110,
+		mouseover:'#toggle'
+	});
+
+</script>
+<!--
+
+<script type="text/javascript">
+	$('.radiate').radiate({
+		angle:function(ul,i){
+			if(i<3)
+				return i*45
+			else
+				return i*45+10
+		},
+		offset:-45,
+		toggle:'#toggle'
+	});
+
+</script>
+-->

@@ -1,0 +1,39 @@
+<!-- Navigation
+<nav id="primary-nav" class="navbar header-navbar sticky-top navbar-expand-md primary-nav bg-dark">
+
+-->
+    <nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark" id="primary-nav">
+    <!-- Logo link and image -->
+    <a class="navbar-brand" href="{{url_for('.index')}}" title="Greenwald Sales" rel="home">
+        <img src="{{ url_for('static', filename='img/Logo-Vertical-Color-01.png')}}"
+             alt="Greenwald Sales" width="100px;">
+    </a>
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="{{url_for('.index')}}#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{url_for('.index')}}#manufacturers">OUR LINES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{url_for('.index')}}#what-we-do">WHAT WE DO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{url_for('.index')}}#team">TEAM</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{url_for('.index')}}#map-background">AREA</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{url_for('.index')}}#showroom-locations">SHOW ROOM</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Sticky NAV -->
+<script src="{{ url_for('static', filename='js/navbar.js')}}"></script>

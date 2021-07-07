@@ -1,0 +1,15 @@
+.radiate {
+    background: url('img/car_logo.png') top center no-repeat;
+    width: 150px;
+    height: 150px;
+    padding: 0;
+    position: relative;
+    top: 100px;
+    left: 50%;
+    margin-left: -100px;
+    margin: -30px auto 0 auto
+}
+
+img {
+    width: 200px;
+}

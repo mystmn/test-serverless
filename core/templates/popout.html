@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title>jQuery Radiate Elements Plugin Demo</title>
+    <script type="text/javascript" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/jquery.circular.radiate.js"></script>
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+	.radiate {
+		background: url('{{ url_for('static', filename='img/car/car_logo.png')}}') top center no-repeat;
+		width: 150px;
+		height: 150px;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		top: 100px;
+		left: 50%;
+		margin-left: -100px;
+		}
+		img {
+		width: 100px;
+	}
+
+    </style>
+</head>
+
+<body>
+<div id="jquery-script-menu">
+    <div class="jquery-script-center">
+        <ul>
+            <li>
+                <a href="http://www.jqueryscript.net/animation/jQuery-Plugin-For-Circular-Popup-Html-Elements-Radiate-Elements.html">Download
+                    This Plugin</a></li>
+            <li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+        </ul>
+    </div>
+</div>
+<h1 style="margin: 150px auto;">jQuery Radiate Elements Plugin Demo</h1>
+<div>
+    <input type="button" onclick="$('.radiate').radiate('show')" value="Show">
+    <input type="button" onclick="$('.radiate').radiate('hide')" value="Hide">
+    <input type="button" id="toggle" value="Toggle">
+    <ul class="radiate">
+        <li><a href="#"><img src="{{ url_for('static', filename='img/cars1_logo.png)}}"></a></li>
+        <li><a href="#"><img src="{{ url_for('static', filename='img/car/cars2_logo.png)}}"></a></li>
+        <li><a href="#"><img src="{{ url_for('static', filename='img/car/cars3_logo.png)}}"></a></li>
+        <li><a href="#"><img src="{{ url_for('static', filename='img/car/cars4_logo.png)}}"></a></li>
+        <li><a href="#"><img src="{{ url_for('static', filename='img/car/cars5_logo.png)}}"></a></li>
+        <li><a href="#"><img src="{{ url_for('static', filename='img/car/cars6_logo.png)}}"></a></li>
+    </ul>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="lib/jquery.circular.radiate.js"></script>
+<script type="text/javascript">
+	$('.radiate').radiate({
+		angle:function(ul,i){			
+			if(i<3)
+				return i*45
+			else
+				return i*45+45
+		},
+		offset:-45,
+		toggle:'#toggle'
+	});
+</script>
+</body>
+</html>

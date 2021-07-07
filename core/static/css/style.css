@@ -1,0 +1,272 @@
+:root{
+/* F0F8FF - white background to the main page */
+    --off-white: rgb(255,255,255);
+    --yellow-green: rgb(108,194,74);
+}
+
+body{
+    font-family: Raleway,sans-serif;
+    font-size: 14px;
+    color: #818181;
+    line-height: 26px;
+    overflow-x: hidden;
+    background-color: var(--off-white);
+}
+
+.c-bg{
+    background-color: var(--off-white);
+}
+
+a{
+    color: var(--yellow-green) !important;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+a:hover, a:focus{
+    color: var(--yellow-green);
+    text-decoration: none;
+    box-shadow: none;
+    outline: none;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+h1{
+    font-size: 26px;
+    font-weight: 600;
+    color: #111;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+b, strong{
+    font-weight: 700;
+}
+
+/* Carousel Slider */
+.carousel{
+    margin-top: -200px;
+}
+.carousel-caption{
+    bottom: 10%!important;
+    padding-top: 1%!important;
+}
+
+.carousel-caption > :is(h2, h5){
+    color: white;
+    letter-spacing: 1px;
+}
+
+.carousel-caption > h1{
+    font-size: 72px;
+    font-weight:bold!important;
+}
+.carousel-caption > h5{
+    font-weight:lighter!important;
+}
+
+.slider img{
+    width: 100%;
+}
+
+.header-title{
+    display: flex;
+    isplay: -ms-flexbox;
+    /* display: flex; */
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+a.nav-link{
+    color: var(--off-white);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transfor: uppercase;
+}
+a.nav-link:hover{
+    color: var(--yellow-green);;
+}
+.primary-nav {
+    margin-top: -95px;
+    transition: all 1.2s ease-in-out;
+    -webkit-transition: all 01.2s ease-in-out;
+    -moz-transition: all 1.2s ease-in-out;
+ }
+.header-navbar-collapse {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Sections */
+section{
+    padding-top: 75px;
+}
+
+/* About */
+section#about, .mission-statement{
+    width: 90%;
+    margin: 100px auto auto auto;
+}
+
+section#about > div p, .mission-statement > div p{
+    font-family: Raleway,sans-serif;
+    color: #818181;
+}
+
+section#team img{
+    padding-bottom: 0px;
+}
+
+.bg-white{
+    background-color: white;
+}
+/* Manufacturers */
+.manufacturers img{
+    height: auto;
+    max-width: 100%;
+    vertical-align: top;
+}
+
+/* Sales Area */
+.regional-area{
+    min-height: 0px;
+}
+
+.social-networking{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.regional-area h3{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    color: #111;
+    padding-top: 10px;
+}
+
+.regional-area h5{
+    color: var(--yellow-green);;
+    ont-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.article-f400{
+    font-wight: 400px;
+}
+
+.rk-separator{
+    background-color: var(--yellow-green);
+}
+.rk-separator{
+    height: 2px;
+    position: relative;
+    width: 22px;
+    display: block;
+    margin: 10px auto 30px auto;
+}
+.empty_space{
+    height: 120px;
+}
+/* Sales Area */
+section#team > div p{
+    font-family: Raleway,sans-serif;
+    color: #818181;
+}
+
+/* stay in the loop */
+button.sign-up{
+    background-color: black;
+    color: #fff;
+}
+button.sign-up:hover{
+    background-color: #3d3d3d;
+    border-color: transparent;
+}
+/* Section#Contact */
+.no-gutter{
+    display:flex;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+/* Showroom locations */
+section#showroom-locations{
+    margin-bottom: 100px;
+}
+
+/* Section */
+section.bg-color{
+    background-color: #f5f5f5;
+}
+/* footer */
+footer.bg-style{
+    background-color: #111;
+    color: white;
+    padding: 30px 0
+}
+footer.bg-style h6{
+width: 100%;
+    font-size: .8 rem
+    color: white;
+    text-transform: uppercase;
+}
+footer img{
+    width: 100%;
+}
+footer a:hover{
+    color: rgba(200,232,187);
+}
+.split{
+    border-top: 1px solid #333333;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.contact-address small, contact-call small, contact-email small {
+    font-size: 14px;
+    font-weight: 500;
+}
+.mafsi img{
+    width: 80%;
+    max-width: 200px;
+}
+section#contact{
+    padding: 20px 0 20px 0;
+}
+#contact a:hover{
+    color: black;
+}
+/* Awesome Font */
+i.fa-shopping-basket, i.fa-cutlery, i.fa-plug{
+    color: var(--yellow-green);
+    font-size: 50px;
+    padding-bottom:10px;
+}
+i.fa-twitter, i.fa-linkedin, i.fa-envelope, i.fa-map, i.fa-mobile, i.fa-envelope, i.fa-map-marker{
+    color: var(--yellow-green);
+    font-size: 36px;
+    padding-bottom:10px;
+}
+
+i.fa-car{
+    color: black;
+    font-size: 36px;
+    padding-bottom:10px;
+}
